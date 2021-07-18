@@ -1,6 +1,8 @@
+const Post = require('../models/postModel')
+
 // Check ID Param middleware
 exports.checkID = (req, res, next, val)=>{
-    if(req.params.id > 5){
+    if(req.params.id > 0){
         return res
             .status(400)
             .json({
