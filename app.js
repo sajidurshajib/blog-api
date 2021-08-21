@@ -4,6 +4,7 @@ const postRoute = require('./routes/postRoutes')
 
 // Start express
 const app = express()
+app.use(express.json())
 
 // Check API
 if(process.env.NODE_ENV==='development'){
